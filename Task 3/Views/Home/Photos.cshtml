@@ -1,0 +1,16 @@
+﻿@model List<Task_3.Models.Photo>
+@{
+    ViewBag.Title = "Photos";
+}
+<br/>
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.Partial("Photo", item)
+        </td>
+    </tr>
+    <br />
+    <br />
+}
+

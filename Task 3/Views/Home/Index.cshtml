@@ -1,0 +1,14 @@
+﻿@model List<Task_3.Models.Album>
+@{
+    ViewBag.Title = "Albums";
+}
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.ActionLink(item.Title, "GetPhotos", new { id = item.Id})
+        </td>
+    </tr>
+    <br/>
+}
