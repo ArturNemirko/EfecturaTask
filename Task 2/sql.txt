@@ -1,0 +1,13 @@
+SELECT [t] as [title], [c] as [count]
+
+	FROM (
+	
+	SELECT [Id], [Title] as [t], (SELECT COUNT(*) 
+	
+						FROM [Table]
+	
+						WHERE [ParentId] = [TBL].[Id]) as [c]
+			
+FROM [Table] as [TBL]
+
+	) as [result]
