@@ -14,10 +14,6 @@ namespace Task_1
             public int Count = 0; 
             public TreeNode Left;
             public TreeNode Right; 
-            //public int Value { get; set; }
-            //public int Count { get; set; }
-            //public TreeNode Left { get; set; }
-            //public TreeNode Right { get; set; }
         }
         public TreeNode Node;
 
